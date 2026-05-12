@@ -48,23 +48,23 @@ Overall, the PR strengthens the reliability of aiokafka’s asynchronous archite
 8.Resource cleanup should occur correctly when connections are closed unexpectedly.
 
 3.1.4 Edge Cases
-1. Broker Disconnection During Active Message Transfer
+1.Broker Disconnection During Active Message Transfer
 
 If a Kafka broker disconnects while messages are actively being produced or consumed, the implementation should safely retry or terminate tasks without corrupting message flow.
 
-2. Multiple Async Task Failures Simultaneously
+2.Multiple Async Task Failures Simultaneously
 
 The system should handle concurrent async task failures without deadlocks, memory leaks, or inconsistent connection states.
 
-3. Delayed Broker Response or Timeout
+3.Delayed Broker Response or Timeout
 
 If broker responses are delayed for extended periods, the retry logic should avoid infinite waiting loops and should trigger proper timeout handling.
 
-4. Rapid Connection Retry Cycles
+4.Rapid Connection Retry Cycles
 
 Frequent reconnect attempts should not overload system resources or create duplicate async tasks.
 
-5. Unexpected Cancellation of Event Loop Tasks
+5.Unexpected Cancellation of Event Loop Tasks
 
 The implementation should safely clean up resources when asyncio tasks are cancelled unexpectedly during execution.
 
