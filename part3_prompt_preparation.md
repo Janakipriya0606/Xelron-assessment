@@ -1,4 +1,4 @@
-Selected PR: aiokafka PR #1006
+Selected PR: Aiokafka PR #1006
 Repository
 
 Aiokafka Repository
@@ -31,9 +31,9 @@ Overall, the PR strengthens the reliability of aiokafka’s asynchronous archite
 
 3.1.3 Acceptance Criteria
 
-1. When a Kafka broker connection fails temporarily, the system should retry communication without crashing the application.
+1.When a Kafka broker connection fails temporarily, the system should retry communication without crashing the application.
 
-2. Async producer and consumer tasks should terminate cleanly after cancellation or connection interruption.
+2.Async producer and consumer tasks should terminate cleanly after cancellation or connection interruption.
 
 3.The implementation should prevent hanging asyncio tasks during broker failures or timeout scenarios.
 
