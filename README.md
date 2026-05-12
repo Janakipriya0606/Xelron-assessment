@@ -1,2 +1,4 @@
-# Xelron-assessment
+The selected repository for this assessment is the Beets repository. Among the provided pull requests, PR #3279 and PR #3509 were selected for detailed analysis based on my understanding and technical background. Other pull requests including PR #1808, PR #3145, PR #3214, PR #3478, PR #3568, PR #3877, PR #3883, and PR #4199 were also reviewed for comparison and learning purposes.
+
+Integrity Declaration: “I declare that the analysis and documentation presented in this assessment are based on my own understanding and work. External tools, if used, were only for language refinement and structuring support.”
 Assessment submission analyzing five open-source repos for Python usage, with detailed PR breakdowns from beetbox/beets, a full prompt preparation document covering acceptance criteria and edge cases, and a written technical rationale for PR selection.
